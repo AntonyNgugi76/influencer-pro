@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - phyllo_connect (0.3.5):
+    - Flutter
+    - PhylloConnect (= 0.3.5)
+  - PhylloConnect (0.3.5)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - phyllo_connect (from `.symlinks/plugins/phyllo_connect/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PhylloConnect
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  phyllo_connect:
+    :path: ".symlinks/plugins/phyllo_connect/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  phyllo_connect: a2bdd02dc2ac2712738deac0954cec77af0002b3
+  PhylloConnect: 0aab76f66e2e3c667ca2f807f7efed26f4ea86af
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2
