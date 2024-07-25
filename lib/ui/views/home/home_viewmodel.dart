@@ -10,5 +10,5 @@ class HomeViewModel extends BaseViewModel {
   final _bottomSheetService = locator<BottomSheetService>();
 
   String instagramId = '9bb8913b-ddd9-430b-a66a-d74d846e6c66';
- String youtubeId = '14d9ddf5-51c6-415e-bde6-f8ed36ad7054';
+  String youtubeId = '14d9ddf5-51c6-415e-bde6-f8ed36ad7054';
 }

@@ -7,7 +7,6 @@ import 'package:influencer_pro/utils/result.dart';
 
 import 'configs.dart';
 
-
 enum RequestType { post, get }
 
 class Http {
@@ -35,7 +34,6 @@ class Http {
       };
 
       switch (requestType) {
-
         // Send a POST request with the given parameter.
         case RequestType.post:
           final Response response = await _client.post(uri,

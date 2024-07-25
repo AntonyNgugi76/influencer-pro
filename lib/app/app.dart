@@ -5,13 +5,21 @@ import 'package:influencer_pro/ui/views/startup/startup_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:influencer_pro/services/phyllo_service.dart';
+import 'package:influencer_pro/ui/views/wrapper/wrapper_view.dart';
+import 'package:influencer_pro/ui/views/profile/profile_view.dart';
+import 'package:influencer_pro/ui/views/analytics/analytics_view.dart';
+import 'package:influencer_pro/ui/views/chat/chat_view.dart';
 // @stacked-import
 
 @StackedApp(
   routes: [
     MaterialRoute(page: HomeView),
     MaterialRoute(page: StartupView),
-    // @stacked-route
+    MaterialRoute(page: WrapperView),
+    MaterialRoute(page: ProfileView),
+    MaterialRoute(page: AnalyticsView),
+    MaterialRoute(page: ChatView),
+// @stacked-route
   ],
   dependencies: [
     LazySingleton(classType: BottomSheetService),
