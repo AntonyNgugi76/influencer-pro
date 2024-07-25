@@ -5,6 +5,7 @@ import 'package:influencer_pro/app/app.locator.dart';
 import 'package:influencer_pro/app/app.router.dart';
 import 'package:influencer_pro/state/phyllo_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:sizer/sizer.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 Future<void> main() async {
@@ -20,17 +21,21 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (context) => PhylloProvider())
-        ],
-        child: MaterialApp(
-          initialRoute: Routes.startupView,
-          onGenerateRoute: StackedRouter().onGenerateRoute,
-          navigatorKey: StackedService.navigatorKey,
-          navigatorObservers: [
-            StackedService.routeObserver,
-          ],
-        ));
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return MultiProvider(
+            providers: [
+              ChangeNotifierProvider(create: (context) => PhylloProvider())
+            ],
+            child: MaterialApp(
+              initialRoute: Routes.startupView,
+              onGenerateRoute: StackedRouter().onGenerateRoute,
+              navigatorKey: StackedService.navigatorKey,
+              navigatorObservers: [
+                StackedService.routeObserver,
+              ],
+            ));
+      }
+    );
   }
 }
