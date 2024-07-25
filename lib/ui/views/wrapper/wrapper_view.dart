@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:influencer_pro/ui/common/app_colors.dart';
 import 'package:influencer_pro/ui/views/analytics/analytics_view.dart';
 import 'package:influencer_pro/ui/views/chat/chat_view.dart';
 import 'package:influencer_pro/ui/views/profile/profile_view.dart';
@@ -19,16 +20,25 @@ class WrapperView extends StackedView<WrapperViewModel> {
     return Scaffold(
       body: getViewForIndex(viewModel.currentIndex),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: kcPrimaryColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28.0),
+        ),
         onPressed: () {
           viewModel.setIndex(2);
         },
-        child: SvgPicture.asset('assets/svgs/home.svg'),
+        child: SvgPicture.asset('assets/svgs/home.svg', color: kcBlueColor,),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
       bottomNavigationBar: BottomAppBar(
+        color: kcPrimaryColor,
         shape: CircularNotchedRectangle(),
         notchMargin: 6.0,
         child: Container(
+          decoration: BoxDecoration(
+            // color: kcPrimaryColor
+          ),
           height: 60.0, // Ensure there's enough height for the FAB's notch
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
