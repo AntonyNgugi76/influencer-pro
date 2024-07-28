@@ -55,13 +55,13 @@ class WrapperView extends StackedView<WrapperViewModel> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SvgPicture.asset(
-                          'assets/svgs/analytics.svg',
+                          'assets/svgs/message.svg',
                           color: viewModel.currentIndex == 0
                               ? Colors.blue
                               : Colors.grey,
                         ),
                         Text(
-                          'Analytics',
+                          'Chats',
                           style: TextStyle(
                             color: viewModel.currentIndex == 0
                                 ? Colors.blue
@@ -80,13 +80,13 @@ class WrapperView extends StackedView<WrapperViewModel> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
 
-                        SvgPicture.asset('assets/svgs/message.svg',
+                        SvgPicture.asset('assets/svgs/chart-bar.svg',
                           color: viewModel.currentIndex == 1
                           ? Colors.blue
                           : Colors.grey,
                         ),
                         Text(
-                          'Chats',
+                          'Earnings',
                           style: TextStyle(
                             color: viewModel.currentIndex == 1
                                 ? Colors.blue
@@ -111,13 +111,13 @@ class WrapperView extends StackedView<WrapperViewModel> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SvgPicture.asset(
-                          'assets/svgs/chart-bar.svg',
+                          'assets/svgs/analytics.svg',
                           color: viewModel.currentIndex == 3
                               ? Colors.blue
                               : Colors.grey,
                         ),
                         Text(
-                          'Trending',
+                          'Analytics',
                           style: TextStyle(
                             color: viewModel.currentIndex == 3
                                 ? Colors.blue
@@ -169,13 +169,14 @@ class WrapperView extends StackedView<WrapperViewModel> {
 Widget getViewForIndex(int index) {
   switch (index) {
     case 0:
-      return AnalyticsView();
-    case 1:
       return ChatView();
+
+    case 1:
+      return HomeView();
     case 2:
       return HomeView();
     case 3:
-      return HomeView();
+      return AnalyticsView();
     case 4:
       return ProfileView();
 
