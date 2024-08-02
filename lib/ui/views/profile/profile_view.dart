@@ -30,7 +30,7 @@ class ProfileView extends StackedView<ProfileViewModel> {
                 children: [
                   Container(
                     height: MediaQuery.of(context).size.height * 0.1,
-                    decoration: BoxDecoration(color: kcPrimaryColorDark),
+                    decoration: BoxDecoration(color: kcPrimaryColor),
                   ),
                   ProfileCard(),
                 ],

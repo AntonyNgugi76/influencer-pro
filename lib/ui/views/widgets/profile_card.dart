@@ -56,7 +56,7 @@ class ProfileCard extends StatelessWidget {
                             children: [
                               SvgPicture.asset(
                                 'assets/svgs/call.svg',
-                                color: kcPrimaryColorDark,
+                                color: kcBlueColor,
                               ),
                               horizontalSpaceSmall,
                               Text(
@@ -73,7 +73,7 @@ class ProfileCard extends StatelessWidget {
                             children: [
                               SvgPicture.asset(
                                 'assets/svgs/sms.svg',
-                                color: kcPrimaryColorDark,
+                                color: kcBlueColor,
                               ),
                               horizontalSpaceSmall,
                               Text(
@@ -88,7 +88,7 @@ class ProfileCard extends StatelessWidget {
                             children: [
                               SvgPicture.asset(
                                 'assets/svgs/location.svg',
-                                color: kcPrimaryColorDark,
+                                color: kcBlueColor,
                               ),
                               horizontalSpaceSmall,
                               Text(

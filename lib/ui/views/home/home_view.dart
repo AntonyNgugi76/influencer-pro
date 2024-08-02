@@ -112,7 +112,7 @@ class HomeView extends StackedView<WrapperViewModel> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Statistics',
+                          'Analytics',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
